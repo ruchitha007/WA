@@ -11,7 +11,7 @@
 
 *Office Hours:* Please make a formal request (i.e. starfish)
 
-*Optional Textbook:* None
+*Optional Textbook:* None (*more on this in project 0*)
 
 ## Learning Outcomes
 After successful completion of the course, a student will demonstrate knowledge of the following:
