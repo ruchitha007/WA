@@ -62,8 +62,7 @@ I want you to feel comfortable sharing information with me directly and through 
 
 ## Evaluation
 I encourage you to try to be less worried about grades than you are. If you focus on grades, learning will always be a struggle. If you focus on learning, grades tend to take care of themselves.  Your grade in this class will be determined by the following components: 
-* Practice (35%)
-* Projects (35%)
+* Projects (70%)
 * Assessment (30%)
 
 ## Class Schedule[^2]
