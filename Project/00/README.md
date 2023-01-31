@@ -53,7 +53,7 @@ The web applications built in the course's projects will use what is known as th
 ### Reference Documentation for JavaScript
 - [JavaScript](https://developer.mozilla.org/en-US/)(*see the Guides menu*)
 - [Eloquent JavaScript](https://eloquentjavascript.net)
-- [ECMA Script](https://tc39.es/ecma262/)java
+- [ECMA Script](https://tc39.es/ecma262/)
 - [JavaScript](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/)
 - [JavaScript: The Good Parts](https://www.oreilly.com/library/view/javascript-the-good/9780596517748/)
 - [Learning JavaScript Design Patterns](https://www.oreilly.com/library/view/learning-javascript-design/9781098139865/)
