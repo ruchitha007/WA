@@ -1,4 +1,4 @@
-# Project 0 - Reference Material and Submitting Projects
+# Project 0 - Reference Material and Submitting Projects[^1]
 
 ## Introduction
 
@@ -129,4 +129,4 @@ The following files would need to be zipped for project 0 (i.e. ```zip -r p0.zip
 - p0.html
 - images/firefox-icon.png
 
-
+[^1]: [Stanford Computer Science](https://cs.stanford.edu)
