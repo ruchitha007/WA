@@ -102,4 +102,4 @@ I encourage you to try to be less worried about grades than you are. If you focu
 
 [^1]: Thanks to [Jeremy Henkel](https://www.wofford.edu/academics/majors-and-programs/philosophy/faculty-and-staff) for inspiration.
 
-[^2]: Thanks to [Stanford Computer Science](https://cs.stanford.edu) for inspiration.
+[^2]: [Stanford Computer Science](https://cs.stanford.edu)
