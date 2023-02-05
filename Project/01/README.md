@@ -1,4 +1,4 @@
-# Project 1: HTML and CSS
+# Project 1: HTML and CSS [^1]
 
 ## Problem 1 (20 points)
 
@@ -68,3 +68,5 @@ Create a third stylesheet ```styleC.css``` that utilizes 2 of the following:
 ## Submision
 
 Use the submission guidelines from [project 0](https://github.com/btdobbs/WA/tree/main/Project/00) to submit all of the files needed for Problem 1, including ```index.html```, ```styleA.css```, ```styleB.css```, and (optional) ```styleC.css```.
+
+[^1]: [Stanford Computer Science](https://cs.stanford.edu)
