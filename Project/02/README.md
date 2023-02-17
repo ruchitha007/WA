@@ -137,7 +137,7 @@ These points will be awarded if your JavaScript code for the problems above is c
 
 ## Deliverables
 
-Use the standard class submission mechanism to submit the `project2` directory. This directory should include the starter files we gave you along with code files you created or modified for the problems including:
+Use the standard class [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) to submit the `project2` directory. This directory should include the starter files we gave you along with code files you created or modified for the problems including:
 
 - `make-multi-filter.js`
 - `template-processor.js`
