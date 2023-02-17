@@ -14,8 +14,6 @@ npm install
 
 [ReactJS](https://reactjs.org/) and [Material-UI](https://mui.com/) are fetched into the `node_modules` subdirectory even though we will be loading it into the browser rather than Node.js.
 
-That command will fetch around 600 node modules using around 100 megabytes of space into the subdirectory `node_modules`.
-
 Like the previous assignment, we can use npm to run the various tools we had it fetch. The following npm scripts are available in the `package.json` file:
 
 - `npm run lint` - Runs ESLint on all the project's JavaScript files. The code you submit should run ESLint without warnings.
