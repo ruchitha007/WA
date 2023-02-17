@@ -129,7 +129,7 @@ These points will be awarded if your JavaScript code for the problems above is c
 ## Useful Hints
 
 - In JavaScript, the convention for checking equality/inequality is `===` and `!==`, instead of `==` and `!=`.
-- When running ESLint, make sure the `.eslintrc.json` (hidden file) is present, or ESLint will throw an error. You can use the command `ls -a (dir /a` in a Windows command line) to view all the files in your current directory, including hidden files.
+- When running ESLint, make sure the `.eslintrc.json` (hidden file) is present, or ESLint will throw an error. You can use the command `ls -a` (`dir /a` in a Windows command line) to view all the files in your current directory, including hidden files.
 - If ESLint output shows a lot of style issues, you can ask ESLint to fix many of them for you by running `npm run lint -- --fix`.
 - When moving files around, make sure to do that using the command line. Dragging/dropping files usually does not move hidden files which is a common reason for students missing their `.eslintrc.json` file, which is included in the zip file you extracted at the start.
 - The requirement that your solution to Problem 1 support multiple simultaneous uses of `MakeMultiFilter` means that you should not be using global variables to store the `currentArray` state.
