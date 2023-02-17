@@ -68,7 +68,7 @@ Although you don't need to spend a lot of time on the appearance of the app, it 
 
 For this problem we keep the magic DOM loaded model data we used in the previous project. The model consists of four types of objects: `user`, `photo`, `comment`, and `SchemaInfo` types.
 
-- Photos in the photo-sharing site are organized by user. We will represent users as an object user with the following properties:
+- Photos in the photo-sharing site are organized by user. We will represent users as an object `user` with the following properties:
 
   _id:	        The ID of this user.  
   first_name:	  First name of the user.  
@@ -79,7 +79,7 @@ For this problem we keep the magic DOM loaded model data we used in the previous
   
   The DOM function `window.models.userModel(user_id)` returns the `user` object of the user with id `user_id`. The DOM function `window.models.userListModel()` returns an array with all `user` objects, one for each the users of the app.
 
-- Each user can upload multiple photos. We represent each photo by a photo object with the following properties:
+- Each user can upload multiple photos. We represent each photo by a `photo` object with the following properties:
 
   _id:	      The ID for this photo.
   user_id:	  The ID of the `user` who created the photo.
