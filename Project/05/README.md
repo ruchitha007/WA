@@ -70,38 +70,46 @@ For this problem we keep the magic DOM loaded model data we used in the previous
 
 - Photos in the photo-sharing site are organized by user. We will represent users as an object `user` with the following properties:
 
-  _id:	        The ID of this user.  
-  first_name:	  First name of the user.  
-  last_name:	  Last name of the user.  
-  location:	    Location of the user.  
-  description:	A brief user description.  
-  occupation:	  Occupation of the user.  
+  | property      | description              |
+  | ------------- | ------------------------ |
+  | `_id`	        | The ID of this user      |
+  | `first_name`  |	First name of the user   |
+  | `last_name`	  | Last name of the user    |
+  | `location`	  | Location of the user     |
+  | `description` |	A brief user description |
+  | `occupation`  | Occupation of the user   |
   
   The DOM function `window.models.userModel(user_id)` returns the `user` object of the user with id `user_id`. The DOM function `window.models.userListModel()` returns an array with all `user` objects, one for each the users of the app.
 
 - Each user can upload multiple photos. We represent each photo by a `photo` object with the following properties:
 
-  _id:	      The ID for this photo.
-  user_id:	  The ID of the `user` who created the photo.
-  date_time:	The date and time when the photo was added to the database.
-  file_name:	Name of a file containing the actual photo (in the directory `project5/images`).
-  comments:	  An array of the `comment` objects representing the comments made on this photo.
+  | property    | description                                                                     |
+  | ----------- | ------------------------------------------------------------------------------- |
+  | `_id`	      | The ID for this photo                                                           |
+  | `user_id`	  | The ID of the `user` who created the photo                                      |
+  | `date_time` |	The date and time when the photo was added to the database                      |
+  | `file_name` |	Name of a file containing the actual photo (in the directory `project5/images`) |
+  | `comments`  |	An array of the `comment` objects representing the comments made on this photo  |
 
   The DOM function `window.models.photoOfUserModel(user_id)` returns an array of the `photo` objects belonging to the user with id `user_id`.
 
 - For each photo there can be multiple comments (any user can comment on any photo). `comment` objects have the following properties:
 
-  _id:	      The ID for this comment.
-  photo_id:	  The ID of the `photo` to which this comment belongs.
-  user:	      The `user` object of the user who created the comment.
-  date_time:	The date and time when the comment was created.
-  comment:	  The text of the comment.
+  | property      | description                                           |
+  | ------------- | ----------------------------------------------------- |
+  | `_id`	        | The ID for this comment                               |
+  | `photo_id`	  | The ID of the `photo` to which this comment belongs   |
+  | `user`	      | The `user` object of the user who created the comment |
+  | `date_time`	  | The date and time when the comment was created        |
+  | `comment`	    | The text of the comment                               |
 
 - For testing purposes we have `SchemaInfo` objects have the following properties:
 
-  _id:	          The ID for this SchemaInfo.
-  __v:	          Version number of the SchemaInfo object.
-  load_date_time:	The date and time when the SchemaInfo was loaded. A string.
+  | property         | description                                                |
+  | ---------------- | ---------------------------------------------------------- |
+  | `_id` 	         | The ID for this SchemaInfo                                 |
+  | `__v` 	         | Version number of the SchemaInfo object                    |
+  | `load_date_time` | The date and time when the SchemaInfo was loaded. A string |
 
 ## Problem 2: Fetch model data from the web server (20 points)
 
