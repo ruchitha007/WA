@@ -1,4 +1,4 @@
-# Project 3: JavaScript and the DOM [^1]
+# Project 4: Page Generation with ReactJS [^1]
 
 ## Setup
 
