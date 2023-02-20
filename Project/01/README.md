@@ -1,4 +1,4 @@
-# Project 1: HTML and CSS [^1]
+# Project 1: HTML and CSS[^1]
 
 ## Problem 1 (20 points)
 
