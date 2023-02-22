@@ -112,7 +112,7 @@ if (typeof TemplateProcessor !== 'function') {
   p2Message = 'FAILURE';
 } else {
   var template = 'My favorite month is {{month}} but not the day {{day}} or the year {{year}}';
-  var dateTemplate = new window.TemplateProcessor(template);
+  var dateTemplate = new TemplateProcessor(template);
 
   var dictionary = { month: 'July', day: '1', year: '2016' };
   var str = dateTemplate.fillIn(dictionary);
