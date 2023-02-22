@@ -38,7 +38,7 @@ Declare a global function named `MakeMultiFilter` that takes an array (`original
 
 1. `filterCriteria` - A function that takes an array element as a parameter and returns a boolean. This function is called on every element of `currentArray` and `currentArray` is updated to reflect the results of the `filterCriteria` function. If the `filterCriteria` function returns `false` for an element, that element should be removed from `currentArray`. Otherwise, it is left in `currentArray`. If `filterCriteria` is not a function, the returned function (`arrayFilterer`) should immediately return the value of `currentArray` with no filtering performed.
 
-2. `callback` - A function that will be called when the filtering is done. `callback` takes the value of `currentArray` as an argument. Accessing this inside the callback function should reference the value of originalArray. If callback is not a function, it should be ignored. callback does not have a return value.
+2. `callback` - A function that will be called when the filtering is done. `callback` takes the value of `currentArray` as an argument. Accessing `this` inside the callback function should reference the value of originalArray. If callback is not a function, it should be ignored. callback does not have a return value.
 
 The `arrayFilterer` function should return itself unless the `filterCriteria` parameter is not specified in which case it should return the `currentArray`. It must be possible to have multiple `arrayFilterer` functions operating at the same time.
 
