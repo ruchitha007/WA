@@ -118,7 +118,7 @@ var str = dateTemplate.fillIn(dictionary2);
 assert(str === 'My favorite month is  but not the day 1 or the year 2016');
 ```
 
-Problem 3: Fix `test-project2.js` to not pollute the global namespace (5 points)
+## Problem 3: Fix `test-project2.js` to not pollute the global namespace (5 points)
 
 The test JavaScript file we give you (`test-project2.js`) declares numerous symbols in the global JavaScript namespace. For example, after the script is loaded the symbol `p1Message` appears in the global namespace. Another JavaScript file would then be able to access and change p1Message. Change `test-project2.js` to use the standard JavaScript module pattern using an anonymous function to hide symbols in the global namespace yet keep the same checking functionality.
 
