@@ -6,7 +6,7 @@ In this project you will start up a database system and convert your Photo Shari
 You should have MongoDB and Node.js installed on your system. If not, follow the installation instructions in [Project 0](https://github.com/btdobbs/WA/edit/main/Project/00/README.md) now.
 
 **\*IMPORTANT!\***  
-Project 6 setup is different from the previous projects. You start by making a copy of your `project5` directory files into a directory named `project6`. Into the `project6` directory extract the contents of this zip file. This zip file will overwrite the files `package.json`, `webServer.js`, `.eslintrc.json`, and `index.html` and add several new files and directories. In the unlikely event you had made necessary changes in any of these files in your project5 directory you will need to reapply the changes after doing the unzip.
+Project 6 setup is different from the previous projects. You start by making a copy of your `project5` directory files into a directory named `project6`. Into the `project6` directory extract the contents of this zip file. This zip file will overwrite the files `package.json`, `webServer.js`, `.eslintrc.json`, and `index.html` and add several new files and directories. In the unlikely event you had made necessary changes in any of these files in your `project5` directory you will need to reapply the changes after doing the unzip.
 
 Once you have the Project 6 files, fetch the dependent software using the command:
 
