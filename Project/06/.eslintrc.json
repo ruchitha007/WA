@@ -9,7 +9,7 @@
   ],
   "parser": "@babel/eslint-parser",
   "rules": {
-    // CS 142 rules
+    // CS rules
     "no-console": 0,
     "react/prop-types": "off",
     "no-empty": ["error", { "allowEmptyCatch": true }],
