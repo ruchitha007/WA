@@ -36,7 +36,7 @@ node loadDatabase.js
 
 This program loads the fake model data from previous projects (i.e. `modelData/photoApp.js`) into the database. Since our app currently doesn't have any support for adding or updating things you should only need to run `loadDatabase.js` once. The program erases whatever is in the database before loading the data set so it is safe to run multiple times.
 
-We use the [MongooseJS](http://mongoosejs.com/) Object Definition Language (ODL) to define a [schema](http://mongoosejs.com/docs/guide.html) to store the photo app data in MongoDB. The schema definition files are in the directory schema:
+We use the [MongooseJS](http://mongoosejs.com/) Object Definition Language (ODL) to define a [schema](http://mongoosejs.com/docs/guide.html) to store the photo app data in MongoDB. The schema definition files are in the directory `schema`:
 - `schema/user.js` - Defines the User collection containing the objects describing each user.
 - `schema/photo.js` - Defines the Photos collection containing the objects describing each photo. It also defines the objects we use to store the comments made on the photo.
 - `schema/schemaInfo.js` - Defines the SchemaInfo collection containing the object describing the schema version.
