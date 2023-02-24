@@ -1,6 +1,6 @@
 'use strict';
 /*
- * Mocha test of CS142 Project 6 web API.  To run type
+ * Mocha test of Project 6 web API.  To run type
  *   node_modules/.bin/mocha serverApiTest.js
  */
 /* jshint node: true */
@@ -11,7 +11,7 @@ var async = require('async');
 var _ = require('lodash');
 var fs = require('fs')
 
-var cs142models = require('../modelData/photoApp.js').cs142models;
+var models = require('../modelData/photoApp.js').models;
 
 var port = 3000;
 var host = 'localhost';
@@ -40,15 +40,15 @@ function removeMongoProperties(model) {
     return model;
 }
 
-describe('CS142 Photo App API - ', function () {
+describe('Photo App API - ', function () {
 
     describe('test using model data', function (done) {
         it ('webServer does not use model data', function(done) {
             fs.readFile("../webServer.js", function (err, data) {
                 if (err) throw err;
-                var regex = /\n\s*var cs142models = require\('\.\/modelData\/photoApp\.js'\)\.cs142models;/g;
+                var regex = /\n\s*var models = require\('\.\/modelData\/photoApp\.js'\)\.models;/g;
                 assert(!data.toString().match(regex), 
-                    'webServer still contains reference to cs142 models.');
+                    'webServer still contains reference to models.');
                 done();
             });
         })
@@ -56,7 +56,7 @@ describe('CS142 Photo App API - ', function () {
 
     describe('test /user/list', function (done) {
         var userList;
-        var cs142Users = cs142models.userListModel();
+        var Users = models.userListModel();
 
         it('can get the list of user', function (done) {
             http.get({
@@ -83,13 +83,13 @@ describe('CS142 Photo App API - ', function () {
         });
 
         it('has the correct number elements', function (done) {
-            assert.strictEqual(userList.length, cs142Users.length);
+            assert.strictEqual(userList.length, Users.length);
             done();
         });
 
 
         it('has an entry for each of the users', function (done) {
-            async.each(cs142Users, function (realUser, callback) {
+            async.each(Users, function (realUser, callback) {
                 var user = _.find(userList, {
                     first_name: realUser.first_name,
                     last_name: realUser.last_name
@@ -106,7 +106,7 @@ describe('CS142 Photo App API - ', function () {
 
     describe('test /user/:id', function (done) {
         var userList;
-        var cs142Users = cs142models.userListModel();
+        var Users = models.userListModel();
 
         it('can get the list of user', function (done) {
             http.get({
@@ -128,7 +128,7 @@ describe('CS142 Photo App API - ', function () {
         });
 
         it('can get each of the user detail with /user/:id', function (done) {
-            async.each(cs142Users, function (realUser, callback) {
+            async.each(Users, function (realUser, callback) {
                 var user = _.find(userList, {
                     first_name: realUser.first_name,
                     last_name: realUser.last_name
@@ -185,7 +185,7 @@ describe('CS142 Photo App API - ', function () {
 
     describe('test /photosOfUser/:id', function (done) {
         var userList;
-        var cs142Users = cs142models.userListModel();
+        var Users = models.userListModel();
 
         it('can get the list of user', function (done) {
             http.get({
@@ -207,7 +207,7 @@ describe('CS142 Photo App API - ', function () {
         });
 
         it('can get each of the user photos with /photosOfUser/:id', function (done) {
-            async.each(cs142Users, function (realUser, callback) {
+            async.each(Users, function (realUser, callback) {
                 // validate the the user is in the list once
                 var user = _.find(userList, {
                     first_name: realUser.first_name,
@@ -233,7 +233,7 @@ describe('CS142 Photo App API - ', function () {
                         assert.strictEqual(response.statusCode, 200, 'HTTP response status code not OK');
                         photos = JSON.parse(responseBody);
 
-                        var real_photos = cs142models.photoOfUserModel(realUser._id);
+                        var real_photos = models.photoOfUserModel(realUser._id);
 
                         assert.strictEqual(real_photos.length, photos.length, 'wrong number of photos returned');
                         _.forEach(real_photos, function (real_photo) {
