@@ -66,13 +66,13 @@ Calling `TableTemplate.fillIn("table", dict, 'Part Number')`, where `"table"` is
 
 If the template specifies a property that is not defined in the dictionary object the template should be replaced with an empty string. Your system need only handle properly formatted templates. Its behavior can be left undefined in the case of nested templates (e.g., `{{foo {{bar}}}}` or unbalanced `{{`). You do not need to handle nested tables or complex table cells.
 
-You should use your `cs142-template-processor.js` solution from project 2 to help you implement the `fillIn` method. See the script tag ordering in the html file in the `project3` directory to see how your `cs142-template-processor.js` code would be loaded.
+You should use your `template-processor.js` solution from project 2 to help you implement the `fillIn` method. See the script tag ordering in the html file in the `project3` directory to see how your `template-processor.js` code would be loaded.
 
 Beware that browsers insert a `<tbody>` element around all of the `<tr>` elements in a table, if the table doesn't already contain a `<tbody>`.
 
 Once your function has processed the entire table you should examine the visibility property of the table's style and if it is hidden update it to be visible.
 
-Once you have created the JavaScript class, open the file `cs142-test-table.html` in your browser. This file represents an HTML page containing a sample template table that that will run your code and shows what your output should look like. Do not modify this file.
+Once you have created the JavaScript class, open the file `test-table.html` in your browser. This file represents an HTML page containing a sample template table that that will run your code and shows what your output should look like. Do not modify this file.
 
 ## Additional Requirements, Hints, etc.
 
