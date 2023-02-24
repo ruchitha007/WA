@@ -1,17 +1,17 @@
 /* jshint node: true */
 
 /*
- * This Node.js program loads the CS142 Project #5 model data into Mongoose defined objects
+ * This Node.js program loads the Project #5 model data into Mongoose defined objects
  * in a MongoDB database. It can be run with the command:
  *     node loadDatabase.js
  * be sure to have an instance of the MongoDB running on the localhost.
  *
- * This script loads the data into the MongoDB database named 'cs142project6'.  In loads
+ * This script loads the data into the MongoDB database named 'project6'.  In loads
  * into collections named User and Photos. The Comments are added in the Photos of the
  * comments. Any previous objects in those collections is discarded.
  *
  * NOTE: This scripts uses Promise abstraction for handling the async calls to
- * the database. We are not teaching Promises in CS142 so strongly suggest you don't
+ * the database. We are not teaching Promises so strongly suggest you don't
  * use them in your solution.
  *
  */
@@ -20,10 +20,10 @@
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 mongoose.set("strictQuery", false);
-mongoose.connect('mongodb://localhost/cs142project6', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/project6', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Get the magic models we used in the previous projects.
-var cs142models = require('./modelData/photoApp.js').cs142models;
+var models = require('./modelData/photoApp.js').models;
 
 // Load the Mongoose schema for Use and Photo
 var User = require('./schema/user.js');
@@ -38,10 +38,10 @@ var removePromises = [User.deleteMany({}), Photo.deleteMany({}), SchemaInfo.dele
 Promise.all(removePromises).then(function () {
 
     // Load the users into the User. Mongo assigns ids to objects so we record
-    // the assigned '_id' back into the cs142model.userListModels so we have it
+    // the assigned '_id' back into the model.userListModels so we have it
     // later in the script.
 
-    var userModels = cs142models.userListModel();
+    var userModels = models.userListModel();
     var mapFakeId2RealId = {};
     var userPromises = userModels.map(function (user) {
         return User.create({
@@ -71,7 +71,7 @@ Promise.all(removePromises).then(function () {
         var photoModels = [];
         var userIDs = Object.keys(mapFakeId2RealId);
         for (var i = 0; i < userIDs.length; i++) {
-            photoModels = photoModels.concat(cs142models.photoOfUserModel(userIDs[i]));
+            photoModels = photoModels.concat(models.photoOfUserModel(userIDs[i]));
         }
         var photoPromises = photoModels.map(function (photo) {
             return Photo.create({
