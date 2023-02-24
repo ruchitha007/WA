@@ -3,7 +3,7 @@
 /*
  * This builds on the webServer of previous projects in that it exports the current
  * directory via webserver listing on a hard code (see portno below) port. It also
- * establishes a connection to the MongoDB named 'cs142project6'.
+ * establishes a connection to the MongoDB named 'project6'.
  *
  * To start the webserver run the command:
  *    node webServer.js
@@ -16,7 +16,7 @@
  * /test          - (Same as /test/info)
  * /test/info     -  Returns the SchemaInfo object from the database (JSON format).  Good
  *                   for testing database connectivity.
- * /test/counts   -  Returns the population counts of the cs142 collections in the database.
+ * /test/counts   -  Returns the population counts of the collections in the database.
  *                   Format is a JSON object with properties being the collection name and
  *                   the values being the counts.
  *
@@ -43,9 +43,9 @@ var Photo = require('./schema/photo.js');
 var SchemaInfo = require('./schema/schemaInfo.js');
 
 // XXX - Your submission should work without this line. Comment out or delete this line for tests and before submission!
-var cs142models = require('./modelData/photoApp.js').cs142models;
+var models = require('./modelData/photoApp.js').models;
 mongoose.set('strictQuery', false);
-mongoose.connect('mongodb://localhost/cs142project6', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/project6', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // We have the express static module (http://expressjs.com/en/starter/static-files.html) do all
 // the work for us.
@@ -128,7 +128,7 @@ app.get('/test/:p1', function (request, response) {
  * URL /user/list - Return all the User object.
  */
 app.get('/user/list', function (request, response) {
-    response.status(200).send(cs142models.userListModel());
+    response.status(200).send(models.userListModel());
 });
 
 /*
@@ -136,7 +136,7 @@ app.get('/user/list', function (request, response) {
  */
 app.get('/user/:id', function (request, response) {
     var id = request.params.id;
-    var user = cs142models.userModel(id);
+    var user = models.userModel(id);
     if (user === null) {
         console.log('User with _id:' + id + ' not found.');
         response.status(400).send('Not found');
@@ -150,7 +150,7 @@ app.get('/user/:id', function (request, response) {
  */
 app.get('/photosOfUser/:id', function (request, response) {
     var id = request.params.id;
-    var photos = cs142models.photoOfUserModel(id);
+    var photos = models.photoOfUserModel(id);
     if (photos.length === 0) {
         console.log('Photos for user with _id:' + id + ' not found.');
         response.status(400).send('Not found');
