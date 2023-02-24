@@ -22,7 +22,7 @@ We can use npm to run the various tools we had it fetch. As can be seen in the `
 
 Your solutions for all of the problems below should be implemented in the `project4` directory.
 
-This project uses [ReactJS](https://reactjs.org/), a popular framework for building web applications. The project's goal is to get you enough up to speed with ReactJS and the CS142 coding conventions that you will be able to build a web application with it in the next project.
+This project uses [ReactJS](https://reactjs.org/), a popular framework for building web applications. The project's goal is to get you enough up to speed with ReactJS and the coding conventions that you will be able to build a web application with it in the next project.
 
 In order to fetch our web app via the HTTP protocol, we use a simple Node.js web server that can be started with this command from the `project4` directory:
 
