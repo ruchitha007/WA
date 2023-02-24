@@ -91,7 +91,7 @@ To help you make sure your web server conforms to the proper API we provide a te
 
 Your GET requests do not return exactly the same thing that the `models` functions return but they do need to return the information needed by your app so that the model data of each view can be displayed with a single `FetchModel` call. You will need to do subsetting and/or augmentation of the objects coming from the database to build your response to meet the needs of the UI. For this assignment you are not allow to alter the database schema in anyway.
 
-**/*IMPORTANT!/***  
+**\*IMPORTANT!\***    
 
 Implementing these Express request handlers requires interacting with two different "model" data objects. The Mongoose system returns models from the objects stored in MongoDB while the request itself should return the data models needed by the Photo App views. Unfortunately since the Mongoose models are set by the database schema and front end models are set by the needs of the UI views they don't align perfectly. Handling these requests will require processing to assemble the model needed by the front end from the Mongoose models returned from the database.
 
