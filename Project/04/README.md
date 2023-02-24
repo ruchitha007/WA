@@ -65,7 +65,7 @@ To support reusable components, we adopt a file organization that co-locates the
 
 You should look through the files invoked in the `getting-started.html` view (`getting-started.html`, `gettingStarted.jsx`, `components/example/Example.jsx`) since it shows the JavaScript and JSX statements needed to run an ReactJS web application along with explanatory comments. You should use this pattern and file naming convention for the other components you build for the class.
 
-Model data is typically fetched from the webserver which retrieves the data from a database. To avoid having to set up a database for this project we will give you an HTML script tag to load the model data directly into the browser's DOM from the local file system. The models will appear in the DOM under the property name `cs142models`. You will be able to access it under the name `window.cs142models` in a ReactJS component.
+Model data is typically fetched from the webserver which retrieves the data from a database. To avoid having to set up a database for this project we will give you an HTML script tag to load the model data directly into the browser's DOM from the local file system. The models will appear in the DOM under the property name `models`. You will be able to access it under the name `window.models` in a ReactJS component.
 
 ## Problem 1: Understand and update the example view (5 points)
 
@@ -79,7 +79,7 @@ You should look through and understand the `getting-started.html` view and the `
 
 Create a new component view that will display the names of all states containing a given substring. Your view must implement an input field that accepts a substring. The view will display in alphabetical order an HTML **list** of all states whose names contain the given substring (ignoring differences in case). For example, the view for the substring of "al" should list the states Alabama, Alaska, and California. The list should automatically update after each character that the user types in. The page should also display the substring that was used to filter the states in a new element separate from the input field. If there are no matching states then the web page should display a message indicating that fact (rather than just showing nothing). All states should be displayed when the substring is empty.
 
-As in Problem #1 we provide you the model data with states. It can be accessed via `window.cs142models.states` after it is included with:
+As in Problem #1 we provide you the model data with states. It can be accessed via `window.models.states` after it is included with:
 
 ```xhtml
 <script src="modelData/states.js"></script>
