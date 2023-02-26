@@ -102,6 +102,13 @@ Your JavaScript must be clean (appropriate use of classes, no global variables o
 
 ## Deliverables
 
-Use the standard class [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) to submit the entire `project3` directory.
+Use the standard class [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) to submit the `project3` directory. This directory should include only the following files:
+
+- `datepicker.css`
+- `DatePicker.js`
+- `TableTemplate.js`
+- `template-processor.js`
+
+Please make sure your submission runs npm run lint and npm test with no errors or warnings.
 
 [^1]: [Stanford Computer Science](https://cs.stanford.edu)
