@@ -119,7 +119,7 @@ Allow users to add new photos. When a user is logged in, the main toolbar should
 
 Extend the web server to support POST requests to the URL:
 
-` `/photos/new` - Upload a photo for the current user. The body of the POST request should be the file (see hint below). The uploaded files should be placed in the `images` directory under an unique name you generated. The unique name, along with the creation data and logged in user id, should be placed in the new Photo object you create. A response status of 400 should be returned if there is no file in the POST request. See the Hint section for help with this.
+- `/photos/new` - Upload a photo for the current user. The body of the POST request should be the file (see hint below). The uploaded files should be placed in the `images` directory under an unique name you generated. The unique name, along with the creation data and logged in user id, should be placed in the new Photo object you create. A response status of 400 should be returned if there is no file in the POST request. See the Hint section for help with this.
 
 ## Problem 4: Registration and Passwords (15 points)
 
