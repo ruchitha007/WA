@@ -1,7 +1,7 @@
 "use strict";
 /* jshint node: true */
 /**
- * Mocha test of CS142 Project 7 web server session and input API. Run using
+ * Mocha test of Project 7 web server session and input API. Run using
  * this command:
  *   node_modules/.bin/mocha sessionInputApiTest.js
  */
@@ -13,7 +13,7 @@ var _ = require("lodash");
 var fs = require("fs");
 var request = require("request");
 
-var cs142models = require("../modelData/photoApp.js").cs142models;
+var models = require("../modelData/photoApp.js").models;
 
 var port = 3000;
 var host = "localhost";
@@ -37,7 +37,7 @@ function removeMongoProperties(model) {
   return copy;
 }
 
-describe("CS142 Photo App Session and Input API - ", function () {
+describe("Photo App Session and Input API - ", function () {
   describe("test /admin/login and /admin/logout", function (done) {
     it("errors getting the list of user if not logged in", function (done) {
       request(makeFullUrl("/user/list"), function (error, response, body) {
