@@ -2,7 +2,7 @@
 /* jshint node: true */
 
 /**
- * Mocha test of CS142 Project 7 web API. Run using this command:
+ * Mocha test of Project 7 web API. Run using this command:
  *   node_modules/.bin/mocha serverApiTest.js
  */
 
@@ -11,7 +11,7 @@ var http = require("http");
 var async = require("async");
 var _ = require("lodash");
 
-var cs142models = require("../modelData/photoApp.js").cs142models;
+var models = require("../modelData/photoApp.js").models;
 
 var port = 3000;
 var host = "localhost";
@@ -45,7 +45,7 @@ function removeMongoProperties(model) {
   return model;
 }
 
-describe("CS142 Photo App API - ", function () {
+describe("Photo App API - ", function () {
   var authCookie; // Session took from login request
 
   describe("login the user took", function () {
@@ -100,7 +100,7 @@ describe("CS142 Photo App API - ", function () {
 
   describe("test /user/list", function (done) {
     var userList;
-    var cs142Users = cs142models.userListModel();
+    var Users = models.userListModel();
 
     it("can get the list of user", function (done) {
       http.get(
@@ -137,7 +137,7 @@ describe("CS142 Photo App API - ", function () {
     it("has the correct number elements", function (done) {
       assert.strictEqual(
         userList.length,
-        cs142Users.length,
+        Users.length,
         "Wrong number of users. Did you forget to run loadDatabase.js?"
       );
       done();
@@ -145,7 +145,7 @@ describe("CS142 Photo App API - ", function () {
 
     it("has an entry for each of the users", function (done) {
       async.each(
-        cs142Users,
+        Users,
         function (realUser, callback) {
           var user = _.find(userList, {
             first_name: realUser.first_name,
@@ -181,7 +181,7 @@ describe("CS142 Photo App API - ", function () {
 
   describe("test /user/:id", function (done) {
     var userList;
-    var cs142Users = cs142models.userListModel();
+    var Users = models.userListModel();
 
     it("can get the list of user", function (done) {
       http.get(
@@ -212,7 +212,7 @@ describe("CS142 Photo App API - ", function () {
 
     it("can get each of the user detail with /user/:id", function (done) {
       async.each(
-        cs142Users,
+        Users,
         function (realUser, callback) {
           var user = _.find(userList, {
             first_name: realUser.first_name,
@@ -292,7 +292,7 @@ describe("CS142 Photo App API - ", function () {
 
   describe("test /photosOfUser/:id", function (done) {
     var userList;
-    var cs142Users = cs142models.userListModel();
+    var Users = models.userListModel();
     var lastUserID;
 
     it("can get the list of user", function (done) {
@@ -324,7 +324,7 @@ describe("CS142 Photo App API - ", function () {
 
     it("can get each of the user photos with /photosOfUser/:id", function (done) {
       async.each(
-        cs142Users,
+        Users,
         function (realUser, callback) {
           // validate the the user is in the list once
           var user = _.find(userList, {
@@ -365,7 +365,7 @@ describe("CS142 Photo App API - ", function () {
                 );
                 photos = JSON.parse(responseBody);
 
-                var real_photos = cs142models.photoOfUserModel(realUser._id);
+                var real_photos = models.photoOfUserModel(realUser._id);
 
                 assert.strictEqual(
                   real_photos.length,
