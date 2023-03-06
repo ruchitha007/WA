@@ -92,7 +92,7 @@ I encourage you to try to be less worried about grades than you are. If you focu
 |      | 20  | Thu Apr 20   | [Input and Validation](https://github.com/btdobbs/WA/blob/main/Topic/20.md)                          |                                                                     |
 | 11   | 21  | Tue Apr 25   | [State Management](https://github.com/btdobbs/WA/blob/main/Topic/21.md)                              |                                                                     |
 |      | 22  | Thu Apr 27   | [Security](https://github.com/btdobbs/WA/blob/main/Topic/22.md)                                      |                                                                     |
-| 12   | 23  | Tue May 2    | [Network Attacks](https://github.com/btdobbs/WA/blob/main/Topic/23.md)                               | [7 Due](https://github.com/btdobbs/WA/tree/main/Project/07)         |
+| 12   | 23  | Tue May 2    | [Network/Session Attacks](https://github.com/btdobbs/WA/blob/main/Topic/23.md)                       | [7 Due](https://github.com/btdobbs/WA/tree/main/Project/07)         |
 |      | 24  | Thu May 4    | [Other Attacks](https://github.com/btdobbs/WA/blob/main/Topic/24.md)                                 |                                                                     |
 | 13   | 25  | Tue May 9    | [Large Scale Applications](https://github.com/btdobbs/WA/blob/main/Topic/25.md)                      |                                                                     |
 |      | 26  | Thu May 11   | [Data Centers](https://github.com/btdobbs/WA/blob/main/Topic/26.md)                                  | [8 Due](https://github.com/btdobbs/WA/tree/main/Project/08)         |
