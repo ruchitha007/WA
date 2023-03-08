@@ -14,7 +14,7 @@ if (models === undefined) {
   models = {};
 }
 
-models.statesModel = function () {
+models.states = function () {
   return [
     "Alabama",
     "Alaska",
