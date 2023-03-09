@@ -153,6 +153,18 @@ These points will be awarded if your solutions have proper MVC decomposition and
 ## Deliverables
 **After implementing part 5, make sure parts 1 through 4 still work!**
 
-Use the standard [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) mechanism to submit the entire application (everything in the project4 directory).
+Use the standard [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) mechanism to submit the following folders and files:
+- `components`
+- `modelData/example.js`
+- `styles`
+- `getting-started.html`
+- `gettingStarted.jsx`
+- `p2.html`
+- `p2.jsx`
+- `p4.html`
+- `p4.jsx`
+- `p5.html`
+- `p5.jsx`
+- `webpack.config.js`
 
 [^1]: [Stanford Computer Science](https://cs.stanford.edu)
