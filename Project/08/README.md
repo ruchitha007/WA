@@ -218,7 +218,7 @@ On a new view component, the user should be able to see a list of favorited phot
 - This list of favorited photos must persist across multiple sessions: i.e., you must use the server-side database to keep track of this list and access this information to construct the list when users visit their favorites page.
 
 ### React Hints
-- You may find [https://github.com/reactjs/react-modal], [https://v4.mui.com/components/modal/], or [https://github.com/react-bootstrap/react-overlays] helpful. When using libraries with components, read the documentation carefully. 
+- You may find [https://github.com/reactjs/react-modal](https://github.com/reactjs/react-modal), [https://v4.mui.com/components/modal/](https://v4.mui.com/components/modal/), or [https://github.com/react-bootstrap/react-overlays](https://github.com/react-bootstrap/react-overlays) helpful. When using libraries with components, read the documentation carefully. 
 - A significant challenge for this story will be getting the dependencies installed and configured correctly for your photo sharing app.
 - Any `UNMET PEER DEPENDENCY <package-name>` during `npm install` means that you need to install `<package-name>` before installing your current package.
 
