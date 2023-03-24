@@ -10,7 +10,7 @@ from '@mui/material';
 import './userList.css';
 
 /**
- * Define UserList, a React componment of project #5
+ * Define UserList, a React component of project #5
  */
 class UserList extends React.Component {
   constructor(props) {
