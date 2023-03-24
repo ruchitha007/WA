@@ -6,7 +6,7 @@ import './userDetail.css';
 
 
 /**
- * Define UserDetail, a React componment of project #5
+ * Define UserDetail, a React component of project #5
  */
 class UserDetail extends React.Component {
   constructor(props) {
