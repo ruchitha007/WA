@@ -141,7 +141,7 @@ To convert your app to fetch models from the web server you should implement a F
       */
 ```
 
-Although there many modules that would make implementing this function trivial, we want you to learn about the low-level details of AJAX. You may not use other libraries to implement FetchModel; you must write Javascript code that creates XMLHttpRequest DOM objects and responds to their events.
+Although there are many modules that would make implementing this function trivial, we want you to learn about the low-level details of AJAX. You may not use other libraries to implement FetchModel; you must write Javascript code that creates XMLHttpRequest DOM objects and responds to their events.
 
 Your solution needs to be able to handle multiple outstanding FetchModel requests. To demonstrate your FetchModel routine works, your web application should work so that visiting `http://localhost:3000/photo-share.html` displays the version number returned by sending an AJAX request to the `http://localhost:3000/test/info` URL. The version number should be displayed in the `TopBar` component of your app.
 
