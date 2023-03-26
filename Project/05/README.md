@@ -183,6 +183,18 @@ Warning: Doing this extra credit involves touching various pieces used in the no
 
 ## Deliverables
 
-Use the standard [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) mechanism to submit the entire application (everything in the project5 directory).  Please clean up your project directory before submitting, as described in the instructions. In particular, the node_modules directory is 180MB in size so you won't want to try to send an email of that size.
+Use the standard [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) mechanism to submit the following folders and files:
+- components/topBar/TopBar.css
+- components/topBar/TopBar.jsx
+- components/userDetail/userDetail.css
+- components/userDetail/userDetail.jsx
+- components/userList/userList.css
+- components/userList/userList.jsx
+- components/userPhotos/userPhotos.css
+- components/userPhotos/userPhotos.jsx
+- lib/fetchModelData.js
+- photo-share.html
+- photoShare.jsx
+- styles/main.css
 
 [^1]: [Stanford Computer Science](https://cs.stanford.edu)
