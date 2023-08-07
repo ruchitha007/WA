@@ -100,6 +100,6 @@ I encourage you to try to be less worried about grades than you are. If you focu
 
 ***This syllabus is subject to change based on the needs of the class.  I will communicate changes in class or email.***
 
-[^1]: Thanks to [Jeremy Henkel](https://www.wofford.edu/academics/majors-and-programs/philosophy/faculty-and-staff) for inspiration.
+[^1]: Thanks to [Jeremy Henkel](https://www.ohio.edu/center-teaching-learning/jhenkel) for inspiration.
 
 [^2]: [Stanford Computer Science](https://cs.stanford.edu)
