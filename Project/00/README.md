@@ -6,21 +6,25 @@ The projects for this class assume you can do the following:
 - Use a *CLI* (command line interface) to perform system level functions
 - Use a *CLI* or *IDE* to manage and update files
 - Use fundamental programming knowledge from prior courses to pickup languages used in this course
+- Create a user account 
+- Work on a team
 
 Project 0 will require you to:
 
 - Download template files
 - Make a simple text file update
-- Clean files, zip files,  and submit to an LMS
-- Provide links to resources used throughout this class
+- Create or use an existing GitHub account
+- Upload files to a GitHub repository
+- Submit a GitHub URL to an LMS (Learning Mangement System)
+- Create or use an existing JetBrains account
 
 ## Files to Edit and Submit
 
-You will fill in portions of ```p0.html```. Please do not change the other files in this repository or add new files to your repository. Submit project as a zip of the file(s) via Moodle. The due dates for projects are listed on the syllabus. No late project will be accepted without a starfish notice.
+You will fill in portions of ```p0.html```. Please do not change the other files in this repository or add new files to your repository. Submit GitHub URL to an LMS. The due dates for projects are listed on the syllabus. No late project will be accepted without an official excuse.
 
 ## Evaluation
 
-Most of the grade for each project is based on the functionality of your project. There are also style points which are awarded based on how you solve the problem. These reflect the importance of things such as proper HTML validation, clean code structure, and nice-looking interfaces. The style points are described in each project.
+Most of the grade for each project is based on the design and functionality of your project. There are also style points which are awarded based on how you solve the problem. These reflect the importance of things such as proper HTML validation, clean code structure, and nice-looking interfaces. The style points are described in each project.
 
 ## Browsers
 
@@ -28,7 +32,7 @@ Web browsers are still not 100% identical in their behavior, and it is possible 
 
 ## Academic Dishonesty and Getting Help
 
-Please follow the [50 foot Policy](https://www.dna.caltech.edu/courses/cs191/50ft_policy.pdf) when collaborating on projects.
+Please follow the [50 foot Policy](https://www.dna.caltech.edu/courses/cs191/50ft_policy.pdf) when collaborating on projects.  This applies at the team level for group projects.
 
 ## References
 
@@ -93,6 +97,10 @@ For Windows users, you may need to add the location of where MongoDB was install
 - [JavaScript](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/)
 - [JavaScript: The Good Parts](https://www.oreilly.com/library/view/javascript-the-good/9780596517748/)
 - [Learning JavaScript Design Patterns](https://www.oreilly.com/library/view/learning-javascript-design/9781098139865/)
+
+## IDE (Interactive Development Environment)
+
+[WebStorm](https://www.jetbrains.com/webstorm/) is recommented for projects in this course.  You will need to signup for a JetBrains account to use WebStorm.  Request free product downloads with your university email.
     
 ## Q1: Your Name
 
@@ -104,29 +112,9 @@ For Windows users, you may need to add the location of where MongoDB was install
 
 ### Cleaning up before submitting
 
-Please delete any unnecessary files from your project directory before submitting. The web tools used with projects can generate hundreds of megabytes worth of files in your project directory that are not needed. The contents of the following directories contain generated files that can safely be deleted since we can regenerate them while grading:
+Please don't add any unnecessary files to your project repository. The web tools used with projects can generate hundreds of megabytes worth of files in your project directory that are not needed. The contents of the following directories contain generated files that can safely be deleted since we can regenerate them while grading:
 
 - node_modules - Contains the modules fetched by npm based the specification in ```package.json``` file.
 - compiled - Contains the bundled JavaScript product by the React.js tool chain.
-
-### Zip your project directory
-
-Submitting the entire project directory will ensure all the files and subdirectories added or modified when building a project are included. This includes the multiple hidden files (i.e. files that start with a period) that are not normally displayed. Create a zip file of the project directory either from the graphical user interface or a terminal using the zip command.
-
-From the Finder program on MacOS, control-click on the project folder and select the "Compress" option on the pop-up menu. On Windows, right click on the folder, select "Send to..." and "Compressed (zipped) folder."
-
-From a shell running in a terminal program with the current working directory being the directory/folder containing your project directory, run the command:
-
-```zip -r pN.zip pN```
-
-where pN is the name of your project directory.
-Both of the above approached generated a ".zip" file you can upload into Canvas.
-
-### Example
-
-The following files would need to be zipped for project 0 (i.e. ```zip -r p0.zip p0```).
-
-- p0.html
-- images/firefox-icon.png
 
 [^1]: [Stanford Computer Science](https://cs.stanford.edu)
