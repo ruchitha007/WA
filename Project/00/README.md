@@ -108,7 +108,7 @@ For Windows users, you may need to add the location of where MongoDB was install
 - Update the word *My* in p0.html to the possessive form of your name.  There are two changes to make.
   - **Example:** If my name is Bob, I would change *My test page* to *Bob's test page* 
 
-## Submission
+## Submission Guidelines
 
 ### Cleaning up before submitting
 
@@ -116,5 +116,9 @@ Please don't add any unnecessary files to your project repository. The web tools
 
 - node_modules - Contains the modules fetched by npm based the specification in ```package.json``` file.
 - compiled - Contains the bundled JavaScript product by the React.js tool chain.
+
+### GitHub URL
+
+Please create a repository for each project.  Provide the github link to your project repository and not a folder in the repository.
 
 [^1]: [Stanford Computer Science](https://cs.stanford.edu)
