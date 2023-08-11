@@ -98,9 +98,9 @@ For Windows users, you may need to add the location of where MongoDB was install
 - [JavaScript: The Good Parts](https://www.oreilly.com/library/view/javascript-the-good/9780596517748/)
 - [Learning JavaScript Design Patterns](https://www.oreilly.com/library/view/learning-javascript-design/9781098139865/)
 
-## IDE (Interactive Development Environment)
+## IDE (Interactive Development Environment)(*optional*)
 
-[WebStorm](https://www.jetbrains.com/webstorm/) is recommented for projects in this course.  You will need to signup for a JetBrains account to use WebStorm.  Request free product downloads with your university email.
+[WebStorm](https://www.jetbrains.com/webstorm/) and [DataGrip](https://www.jetbrains.com/datagrip/) are recommended for this course.  You will need to signup for a JetBrains account to use these products.  Request free product downloads with your university email.
     
 ## Q1: Your Name
 
