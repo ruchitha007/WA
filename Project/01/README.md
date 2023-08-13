@@ -67,6 +67,13 @@ Create a third stylesheet ```styleC.css``` that utilizes 2 of the following:
 
 ## Submision
 
-Use the submission guidelines from [project 0](https://github.com/btdobbs/WA/tree/main/Project/00) to submit all of the files needed for Problem 1, including ```index.html```, ```styleA.css```, ```styleB.css```, and (optional) ```styleC.css```.
+Use the submission guidelines from [project 0](https://github.com/btdobbs/WA/tree/main/Project/00) to submit.  
+
+Your respository should include the following updated files.
+
+- ```index.html```
+- ```styleA.css```
+- ```styleB.css```
+- (optional) ```styleC.css```
 
 [^1]: [Stanford Computer Science](https://cs.stanford.edu)
