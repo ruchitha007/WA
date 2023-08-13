@@ -153,7 +153,10 @@ These points will be awarded if your solutions have proper MVC decomposition and
 ## Deliverables
 **After implementing part 5, make sure parts 1 through 4 still work!**
 
-Use the standard [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) mechanism to submit the following folders and files:
+Use the standard [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) mechanism to submit.
+
+Your respository should include the following updated files.
+
 - `components`
 - `modelData/example.js`
 - `styles`
