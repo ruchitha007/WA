@@ -183,7 +183,10 @@ Warning: Doing this extra credit involves touching various pieces used in the no
 
 ## Deliverables
 
-Use the standard [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) mechanism to submit the following folders and files:
+Use the standard [submission mechanism](https://github.com/btdobbs/WA/tree/main/Project/00) mechanism to submit.
+
+Your respository should include the following updated files.
+
 - components/topBar/TopBar.css (**if modified**)
 - components/topBar/TopBar.jsx
 - components/userDetail/userDetail.css (**if modified**)
