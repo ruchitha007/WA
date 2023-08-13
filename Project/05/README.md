@@ -187,17 +187,17 @@ Use the standard [submission mechanism](https://github.com/btdobbs/WA/tree/main/
 
 Your respository should include the following updated files.
 
-- components/topBar/TopBar.css (**if modified**)
+- components/topBar/TopBar.css
 - components/topBar/TopBar.jsx
-- components/userDetail/userDetail.css (**if modified**)
+- components/userDetail/userDetail.css
 - components/userDetail/userDetail.jsx
-- components/userList/userList.css (**if modified**)
+- components/userList/userList.css
 - components/userList/userList.jsx
-- components/userPhotos/userPhotos.css (**if modified**)
+- components/userPhotos/userPhotos.css
 - components/userPhotos/userPhotos.jsx
 - lib/fetchModelData.js
 - photo-share.html
 - photoShare.jsx
-- styles/main.css (**if modified**)
+- styles/main.css
 
 [^1]: [Stanford Computer Science](https://cs.stanford.edu)
