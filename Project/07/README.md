@@ -86,7 +86,7 @@ The command will run the web server and restart it every time the `webServer.js`
 
 After updating your Photo Share App with the new files from Project 7 and starting the database and web server, make sure the app is still working before continuing on to the assignment.
 
-## Problem 1: Simple Login (15 points)
+## Problem 1: Simple Login
 
 Extend your photo app to have the notion of a user being logged in. If a user is logged in, the toolbar should include a small message "Hi <firstname>" where <firstname> is the first name of the logged-in user. The toolbar should also contain a button displaying "Logout" that will log the user out.
 
@@ -105,7 +105,7 @@ Modify the web server API to support 2 new REST API calls for logging a user in 
 
 As part of updating the web server to handle login/logout, you need to update all requests (except to `/admin/login` and `/admin/logout`) to reject the request with a status of 401 (Unauthorized) if the session state does not report a user is logged in.
 
-## Problem 2: New Comments (15 points)
+## Problem 2: New Comments
 
 Once you have implemented user login, the next step is to implement the ability to add comments to photos. In the photo detail view where you display the comments of a photo, add the ability for the currently logged in user to add a comment to the photo. You get to design the user interface (e.g., popup dialog, input field, etc.) for this feature. It should be obvious how to use it and what photo the comment is about. The display of the photo and its comments should be updated immediately to reflect the newly added comment.
 
@@ -113,7 +113,7 @@ For the backend support extend the web server API with the following HTTP POST A
 
 - `/commentsOfPhoto/:photo_id - Add a comment to the photo whose id is `photo_id`. The body of the POST requests should be a JSON-encoded body with a single property `comment` that contains the comment's text. The comment object created on the photo must include the identifier of the logged in user and the time when the comment was created. Your implementation should reject any empty comments with a status of 400 (Bad request).
 
-## Problem 3: Photo Uploading (15 points)
+## Problem 3: Photo Uploading
 
 Allow users to add new photos. When a user is logged in, the main toolbar should have a button labeled "Add Photo" that allows the current logged in user to upload a photo to the app. We will provide you with an example of how to upload files using HTML in the Hint section below.
 
@@ -121,7 +121,7 @@ Extend the web server to support POST requests to the URL:
 
 - `/photos/new` - Upload a photo for the current user. The body of the POST request should be the file (see hint below). The uploaded files should be placed in the `images` directory under an unique name you generated. The unique name, along with the creation data and logged in user id, should be placed in the new Photo object you create. A response status of 400 should be returned if there is no file in the POST request. See the Hint section for help with this.
 
-## Problem 4: Registration and Passwords (15 points)
+## Problem 4: Registration and Passwords
 
 Enhance the `LoginRegister` view component to support new-user registration and passwords. Extend the login portion to add a password field. Add a registration section that allows all the fields of the User object to be filled in. To reduce the chance that the user typos that password the view should contain a an additional copy of the password field and the view should only allow the user to be created if the two password fields are identical. Good security practice requires that the passwords typed by the user shouldn't be visible in the view. Registration should be triggered by a button at the bottom of the page labeled "Register Me". When the button is pushed either an error should be reported explaining **specifically** why it didn't work or a success message should be reported and the register form input fields should be cleared.
 
@@ -132,7 +132,7 @@ Extend the web server to support POST requests to the URL:
 
 Enhance the `LoginRegister` view to support logging in with a password and check it as part of the post request to `/admin/login`.
 
-## Extra Credit #1: Salted Passwords (5 points)
+## Extra Credit #1: Salted Passwords
 
 Enhance the security of your password mechanism by implementing salting. The salting mechanism is described in the next few paragraphs. The problem with the clear text password mechanism we implemented for Problem 4 is if someone is able to read the database (for example, a rogue system administrator) they can easily retrieve all of the passwords for all users.
 
@@ -174,7 +174,7 @@ function doesPasswordMatch(hash, salt, clearTextPassword) {
 
 We provide a Mocha test file `test/cs142passwordTest.js` that tests this interface. Please make sure that you pass the tests within this file before submitting. You will need to change the package.json scripts test line to mocha serverApiTest.js sessionInputApiTest.js cs142passwordTest.js` so that running `npm test` runs these tests too. Changing this line also serves as indication that you've done this extra credit. You will also need to update the `loadDatabase.js` script to require `cs142password.js` and use it to generate the correct password properties in the new user objects that the script creates.
 
-## Extra Credit #2: Handle Browser Refresh (5 points)
+## Extra Credit #2: Handle Browser Refresh
 
 For simplicity in the regular parts of this assignment we allow you to keep the application's session state in JavaScript memory. Although this makes implementation easier, it means that a browser refresh causes the application to forget who is logged in.
 
@@ -184,9 +184,9 @@ Extend your application to handle browser refresh like it did before you added t
 - Not mess up the security of the application.
 - Work when submitted using the class assignment submission mechanism.
 
-## Style Points (5 points)
+## Style
 
-These points will be awarded if your problem solutions have proper MVC decomposition, follow the software stack conventions, and ESLINT warning-free JavaScript. In addition, your code and templates must be clean and readable, and your Web pages must be at least "reasonably nice" in appearance and convenience.
+These requirements will be met if your problem solutions have proper MVC decomposition, follow the software stack conventions, and ESLINT warning-free JavaScript. In addition, your code and templates must be clean and readable, and your Web pages must be at least "reasonably nice" in appearance and convenience.
 
 ## Testing
 
@@ -197,7 +197,7 @@ For testing, we:
 
 Our update overwrites the file `serverApiTest.js` so any changes you added in Project 6 as part of the extra credit will need to be backported. To help with the backporting (or if you're just curious), note that we we added a Cookie header key-value pair to the request options of each HTTP request call. See the test file for details.
 
-**Just like in Project 6, please make sure to pass the provided tests before submitting, as a portion of your grade will depend on how many of these tests you pass.**
+**Just like in Project 6, please make sure to pass the provided tests before submitting, as final evaluation will depend on how many of these tests you pass.**
 
 Note the tests assume that the database has only the objects from `loadDatabase.js`. You should run `loadDatabase.js` before running the test.
 
