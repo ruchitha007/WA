@@ -1,6 +1,6 @@
 # Project 1: HTML and CSS[^1]
 
-## Problem 1 (20 points)
+## Problem 1
 
 Create a single HTML docment that presents two different appearances, determined by the document's CSS stylesheet. Your HTML file should be called ```index.html``` and the document's title should be “Project #1”. Along with this HTML document, you should also create two stylesheets called ```styleA.css``` and ```styleB.css```.
 
@@ -35,11 +35,11 @@ If the HTML file links to styleB.css then it should appear like this ("Version B
 
 If a property is not outlined in these specifications (e.g. space between elements in style B and edge of window) you should choose something reasonable.
 
-## Style Points (5 points)
+## Style
 
 Your HTML file must be a valid XHTML 1.0 document that passes validation at [http://validator.w3.org](http://validator.w3.org). In addition, your HTML and CSS must be clean, readable, properly indented, and well-structured.
 
-## Extra Credit (2 points)
+## Extra Credit
 
 Create a third stylesheet ```styleC.css``` that utilizes 2 of the following:
 
