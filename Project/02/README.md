@@ -14,7 +14,7 @@ This will fetch ESLint into the `node_modules` subdirectory. You will be able to
 
 `npm run lint`
 
-The code you submit should start with `'use strict';` in each JavaScript file and running ESLint using the command above should not output any errors or warnings. **Any errors or warnings will impact the accumulation of style points.**
+The code you submit should start with `'use strict';` in each JavaScript file and running ESLint using the command above should not output any errors or warnings. **Any errors or warnings will impact final evaluation.**
 
 To run the assignment, you have two options:
 
@@ -30,7 +30,7 @@ We recommend using the browser for development as the debugging environment is m
 
 In this project we ask you to write or modify some JavaScript functions. The problems in this assignment are of a practical nature and functionality you develop will be useful in completing later class projects. Given the availability of JavaScript libraries to solve or help solve pretty much any JavaScript tasks you would be assigned, it is likely you could solve these with a couple of lines to call some library routine. Since the goal of the project is to learn JavaScript, **we ask that you do not use any JavaScript libraries in your solutions.** Functions built-in to JavaScript, like Arrays and Date objects, are acceptable.
 
-## Problem 1: Generate a Multi Filter Function (10 points)
+## Problem 1: Generate a Multi Filter Function
 
 In your `project2` directory, make a new file named `make-multi-filter.js`. The code for your Multi Filter Function will go in this file.
 
@@ -84,7 +84,7 @@ console.log(arrayFilterer3(filterTwos)()); // prints [1, 3]
 console.log(arrayFilterer4(filterThrees)()); // prints [4, 5, 6]
 ```
 
-## Problem 2: Template Processor (5 points)
+## Problem 2: Template Processor
 
 In your `project2` directory, make a new file named `template-processor.js`. The code for your Template Processor will go in this file.
 
@@ -118,13 +118,13 @@ var str = dateTemplate.fillIn(dictionary2);
 assert(str === 'My favorite month is  but not the day 1 or the year 2016');
 ```
 
-## Problem 3: Fix `test-project2.js` to not pollute the global namespace (5 points)
+## Problem 3: Fix `test-project2.js` to not pollute the global namespace
 
 The test JavaScript file we give you (`test-project2.js`) declares numerous symbols in the global JavaScript namespace. For example, after the script is loaded the symbol `p1Message` appears in the global namespace. Another JavaScript file would then be able to access and change p1Message. Change `test-project2.js` to hide symbols in the global namespace yet keep the same checking functionality.  This can be accomplished using the standard JavaScript module pattern using an anonymous function.  This can also be accomplished by preventing hoisting.
 
-## Style Points (5 points)
+## Style
 
-These points will be awarded if your JavaScript code for the problems above is clean, readable, and ESLint warning-free.
+These requirements will be met if your JavaScript code for the problems above is clean, readable, and ESLint warning-free.
 
 ## Useful Hints
 
