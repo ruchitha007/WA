@@ -14,9 +14,9 @@ This will fetch ESLint into the `node_modules` subdirectory. You will be able to
 
 `npm run lint`
 
-The code you submit should start with `'use strict';` in each JavaScript file and running ESLint using the command above should not output any errors or warnings. **Any errors or warnings will impact the accumulation of style points.**
+The code you submit should start with `'use strict';` in each JavaScript file and running ESLint using the command above should not output any errors or warnings. **Any errors or warnings will impact final evaluation.**
 
-## Problem 1: JavaScript Date Picker (25 points)
+## Problem 1: JavaScript Date Picker
 
 For this problem, you will be implementing two interactive `DatePicker` [displays](https://www.google.com/search?tbm=isch&q=datepicker&gws_rd=ssl#) using a combination of HTML, CSS, and JavaScript.
 
@@ -46,7 +46,7 @@ Once you have created the JavaScript class, we have provided a file `datepicker.
 
 The provided html file has no styling so please create a stylesheet with the filename `datepicker.css` to apply styling to the calendars and make them look nice. The corresponding link tag that requires the css file has already been added for you in the html file.
 
-## Problem 2: Simple Table Template Processing (15 points)
+## Problem 2: Simple Table Template Processing
 
 Create a file `TableTemplate.js` that implements a JavaScript class named `TableTemplate` with a static method `fillIn`.
 
@@ -96,7 +96,7 @@ Once you have created the JavaScript class, open the file `test-table.html` in y
 - When running ESLint, make sure the `.eslintrc.json` (hidden file) is present, or ESLint will throw an error. You can use the command `ls -a` (`dir /a` in a Windows command line) to view all the files in your current directory, including hidden files.
 - If ESLint output shows a lot of style issues, you can ask ESLint to fix many of them for you by running `npm run lint -- --fix`.
 
-## Style Points (10 points)
+## Style
 
 Your JavaScript must be clean (appropriate use of classes, no global variables other than constructor functions, etc.), readable, and ESLint warning-free.
 
