@@ -34,7 +34,7 @@ node webServer.js & npm run build:w
 
 to run the web server and webpack within a single command line window.
 
-## Problem 1: Create the Photo Sharing Application (40 points)
+## Problem 1: Create the Photo Sharing Application
 
 As starter code for your PhotoApp we provide you a skeleton (`photo-share.html` which loads `photoShare.jsx`) that can be started using the URL "http://localhost:3000/photo-share.html". The skeleton:
 
@@ -111,7 +111,7 @@ For this problem we keep the magic DOM loaded model data we used in the previous
   | `__v` 	         | Version number of the SchemaInfo object                    |
   | `load_date_time` | The date and time when the SchemaInfo was loaded. A string |
 
-## Problem 2: Fetch model data from the web server (20 points)
+## Problem 2: Fetch model data from the web server
 
 After doing Problem 1, our photo sharing app front-end is looking like a real web application. The big barrier to be considered real is the fakery we are doing with the model data loaded as JavaScript into the DOM. In this Problem we remove this hack and have the app fetch models from the web server as would typically be done in a real application.
 
@@ -157,15 +157,15 @@ to use the FetchModel function to request the data from the server. There should
 <script src="modelData/photoApp.js"><script>
 ```
 
-## Style Points (5 points)
+## Style
 
-These points will be awarded if your problem solutions have proper MVC decomposition. In addition, your code and components must be clean and readable, and your app must be at least "reasonably nice" in appearance and convenience.
+These requirements will be met if your problem solutions have proper MVC decomposition. In addition, your code and components must be clean and readable, and your app must be at least "reasonably nice" in appearance and convenience.
 
 Note that we are using [Material-UI](https://mui.com/), React components that implement Google's [Material Design](https://material.io/). We have used Material-UI's [Grid component](https://mui.com/components/grid/) to layout the Master-Detail pattern as described in class, and a [App Bar](https://mui.com/components/app-bar/) header for you. Although you don't need to build a fully Material Design compatible app, you should use [Material-UI](https://mui.com/) components when possible.
 
 In addition, remember to run ESLint before submitting. ESLint should raise no errors.
 
-## Extra Credit (5 points)
+## Extra Credit
 
 The `userPhoto`s component specifies that the display should include all of a user's photos along the photos' comments. This approach doesn't work well for users with a large numbers of photos. For extra credit you can implement a photo viewer that only shows one photo at a time (along with the photo's comments) and provides a mechanism to step forward or backward through the user's photos (i.e. a stepper).
 
@@ -179,7 +179,7 @@ In order to get extra credit on this assignment your solution must:
 
 - Your app should allow individual photos to be bookmarked and shared by copying the URL from the browser location bar. The browser's forward and back buttons should do what would be expected. When entering the app using a deep linked URL to individual photos the stepper functionality should operate as expected.
 
-Warning: Doing this extra credit involves touching various pieces used in the non-extra credit part of the assignment. Adding new functionality guarded by a *feature flag* is common practice in web applications but has a risk in that if you break the non-extra credit part of the assignment you can lose more points than you could get from the extra credit. Take care.
+Warning: Doing this extra credit involves touching various pieces used in the non-extra credit part of the assignment. Adding new functionality guarded by a *feature flag* is common practice in web applications but has a risk in that if you break the non-extra credit part of the assignment you can fulfill less requirements overall. Take care.
 
 ## Deliverables
 
