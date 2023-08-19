@@ -65,7 +65,7 @@ node_modules/.bin/nodemon webServer.js
 
 After updating your Photo Share App with the new files from Project 6 and starting the database and web server make sure the app is still working before continuing on to the assignment.
 
-## Problem 1: Convert the web server to use the database (40 points)
+## Problem 1: Convert the web server to use the database
 
 The `webServer.js` we give you in this project is like the Project 5 `webServer.js` in that the app's model fetching routes use the magic `models` rather than a database. Your job is to convert all the routes to use the MongoDB database. There should be no accesses to `models` in your code and your app should work without the line:
 
@@ -103,7 +103,7 @@ JSON.parse(JSON.stringify(modelObject));
 
 by taking `modelObject` converting into a JSON string and then converting it back to a JavaScript object, this time without the methods and special handling done on Mongoose models.
 
-## Problem 2: Convert your app to use `axios` (10 points)
+## Problem 2: Convert your app to use `axios`
 
 In preparation for the next assignment where we will use more of the REST API, convert your photo app to use `axios` rather than your own `FetchModel` routine to fetch the models from the web server. [Axios](https://github.com/axios/axios) is one of the many npm packages available for fetching data. It is faster and has more functionality than our `FetchModel` function, and it is what we will use to make our requests going forward. Your photo app should work without the `FetchModel` function definition after finishing this problem. The functionality of your app should be exactly the same before and after removing the `FetchModel` function definition -- make sure you do not break anything in the process of making this switch.
 
@@ -123,9 +123,9 @@ Notice that `axios.get` returns a Promise, much like `FetchModel`. We can attach
 
 Testing a full web application is challenging. In the directory `test` we provide a test of just the backend portion of your application. The test uses [Mocha](https://mochajs.org/), a popular framework for writing Node.js tests. To setup the test environment, from inside the `test` subdirectory do an `npm install` to fetch Mocha and all the related dependencies. Once you have done this, you can run the test by running the command inside the `test` directory: `npm test`.
 
-The `npm test` command runs the file `test/serverApiTest.js` which is a program written in the Mocha language (e.g. `describe()` and `it()`) testing the three Photo App backend URLs (`/user/list, /user/ID, /photosOfUser/ID`). **In order to be reasonably sure that the functionality of the backend routes conforms to spec, please check that all our provided tests pass before submitting. A portion of your project grade will be based on how many of these tests you pass.**
+The `npm test` command runs the file `test/serverApiTest.js` which is a program written in the Mocha language (e.g. `describe()` and `it()`) testing the three Photo App backend URLs (`/user/list, /user/ID, /photosOfUser/ID`). **In order to be reasonably sure that the functionality of the backend routes conforms to spec, please check that all our provided tests pass before submitting. A portion of your project evaluation will be based on how many of these tests you pass.**
 
-## Extra Credit (10 points)
+## Extra Credit
 
 Your Photo App’s marketing department has come up with a “small” tweak to the app to make it more social network friendly. The change is:
 
@@ -139,9 +139,9 @@ In implementing this you are welcome to add new server API calls or enhance exis
 
 For grading the course staff will enable the Advanced Features setting on your app (if present) and look for the count bubbles UI to determine whether or not they should grade you on the extra credit portion.
 
-## Style Points (5 points)
+## Style
 
-These points will be awarded if your problem solutions have proper MVC decomposition. In addition, your code and templates must be clean and readable, and your app must be at least "reasonably nice" in appearance and convenience.
+These requirements will be met if your problem solutions have proper MVC decomposition. In addition, your code and templates must be clean and readable, and your app must be at least "reasonably nice" in appearance and convenience.
 
 In addition, your code and templates must be clean and readable. Remember to run `npm run lint` before submitting. The linter should raise no errors.
 
