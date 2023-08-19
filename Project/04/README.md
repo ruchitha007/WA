@@ -67,7 +67,7 @@ You should look through the files invoked in the `getting-started.html` view (`g
 
 Model data is typically fetched from the webserver which retrieves the data from a database. To avoid having to set up a database for this project we will give you an HTML script tag to load the model data directly into the browser's DOM from the local file system. The models will appear in the DOM under the property name `models`. You will be able to access it under the name `window.models` in a ReactJS component.
 
-## Problem 1: Understand and update the example view (5 points)
+## Problem 1: Understand and update the example view
 
 You should look through and understand the `getting-started.html` view and the `Example` component. To demonstrate your understanding do the following:
 
@@ -75,7 +75,7 @@ You should look through and understand the `getting-started.html` view and the `
 2. Replace the contents of the `div` region with the class `motto-update` in the Example component with some JSX statements that display your name and a short (up to 20 characters) motto. Like the user's name, the initial value for motto should come in with the model data. You must include some styling for this display in `Example.css`.
 3. Extend the display you did in the previous step so it allows the user to update the motto being displayed. The default value should continue to be retrieved from the model data.
 
-## Problem 2: Create a new component - states view (10 points)
+## Problem 2: Create a new component - states view
 
 Create a new component view that will display the names of all states containing a given substring. Your view must implement an input field that accepts a substring. The view will display in alphabetical order an HTML **list** of all states whose names contain the given substring (ignoring differences in case). For example, the view for the substring of "al" should list the states Alabama, Alaska, and California. The list should automatically update after each character that the user types in. The page should also display the substring that was used to filter the states in a new element separate from the input field. If there are no matching states then the web page should display a message indicating that fact (rather than just showing nothing). All states should be displayed when the substring is empty.
 
@@ -94,7 +94,7 @@ The files you will need to implement are:
 - `components/states/States.jsx` - The ReactJS Component of your states component.
 - `components/states/States.css` - Any CSS styles your component needs. **You must include some styling for your state list here.**
 
-## Problem 3: Personalizing the Layout (5 points)
+## Problem 3: Personalizing the Layout
 
 Create a ReactJS component named `Header` that will display a personalized header at the top of a view. Add this header to all ReactJS web apps in your assignment (`gettingStarted.jsx`, `p2.jsx`, `p4.jsx`, `p5.jsx`). Note that you **should not** replace the section from part 1 (your name and motto). That section should be separate from your header. Use your imagination and creativity to create a header that is "uniquely you". This can include additional images, graphics, whatever you like. You can extend the JSX/JavaScript in the components but you may not use external ReactJS Components or JavaScript libraries such as JQuery. Be creative! A colored rectangle with plain text is not sufficient.
 
@@ -103,13 +103,13 @@ The files you will need to implement are:
 - `components/header/Header.jsx` - The ReactJS Component of your header component. This is defined as a class Header of type [React.Component](https://reactjs.org/docs/react-component.html).
 - `components/header/Header.css` - Any CSS styles your component needs. **You must include some styling for your header here**.
 
-## Problem 4: Add dynamic switching of the views (10 points)
+## Problem 4: Add dynamic switching of the views
 
 Create a `p4.html` and a corresponding JSX file `p4.jsx` that includes both view components (the `Example` and `States` components). The `p4.jsx` needs to implement an ability to switch between the display of the two components. When a view is displayed there should be a button above it that switches to display the other view. For example, when the `States` view is displayed the button above it should read "Switch to Example," and when pushed the `States` should disappear and the `Example` view should be displayed.
 
 For this problem you will need to create the files above as well as modify the webpack configuration file `webpack.config.js` to build a file `compiled/p4.bundle.js` that you can uses in `p4.html` file. Note that if you are using Webpack with the `--watch` flag (i.e. `npm run build:w`), you will need to restart it after changing `webpack.config.js`.
 
-## Problem 5: Single page app (5 points)
+## Problem 5: Single page app
 
 Although the approach taken in Problem 4 allows you to switch between the two views, it does not allow you to bookmark or share a URL pointing at a particular view. Even doing a browser refresh event causes the app to lose track of which view was being displayed.
 
@@ -146,9 +146,9 @@ which would render the States component if the URL had` #/states` and the Exampl
 
 generates a hyperlink with `href="#/states"` and the text "States".
 
-## Style (5 points)
+## Style
 
-These points will be awarded if your solutions have proper MVC decomposition and follow the style guidelines discussed in lecture and section. **Note that you should not directly manipulate the DOM in your code**. In addition, your code and templates must be clean and readable. Remember to run ESLint before submitting. ESLint should raise no errors.
+These requirements will be met if your solutions have proper MVC decomposition and follow the style guidelines discussed in lecture and section. **Note that you should not directly manipulate the DOM in your code**. In addition, your code and templates must be clean and readable. Remember to run ESLint before submitting. ESLint should raise no errors.
 
 ## Deliverables
 **After implementing part 5, make sure parts 1 through 4 still work!**
