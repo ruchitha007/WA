@@ -24,7 +24,7 @@ You will fill in portions of ```p0.html```. Please do not change the other files
 
 ## Evaluation
 
-Most of the grade for each project is based on the design and functionality of your project. There are also style points which are awarded based on how you solve the problem. These reflect the importance of things such as proper HTML validation, clean code structure, and nice-looking interfaces. The style points are described in each project.
+Most of the requirements for each project are based on the design and functionality of your project. There are also style requirements which are awarded based on how you solve the problem. These reflect the importance of things such as proper HTML validation, clean code structure, and nice-looking interfaces. These requirements are described in each project.
 
 ## Browsers
 
