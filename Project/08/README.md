@@ -8,7 +8,7 @@ Like in Project 7, you start by making a copy of the previous project's director
 
 As in Project 7, you will need MongoDB and your web server running. 
 
-## Problem 1: Implement some stories (75 points)
+## Problem 1: Implement some stories
 
 Below is the scrumboard for the project. Each User Story links to the story and hints on what the feature should do. You should take care in choosing stories to do. Stories interact with each other and can either make it easier or harder to do them together. For example, if you choose to do the story about adding visibility controls to photos, the activity feed story should not return photos that the user should not be able to see. 
 
@@ -36,7 +36,7 @@ By design, User Stories are not unambiguous specifications of a feature. This me
 
 ## Grading
 
-In order to get full credit on the assignment you need to do stories totaling **at least 12 story points (which equals 75 assignment points)**. Any story points you do beyond 12 will be applied as if they were assignment points (i.e., the conversion rate for any story point past 12 is 1 story point = 1 assignment point). You can submit additional stories totaling up to an additional 18 story points. In other words you can get up to 18 points of extra credit by doing a total of 30 story points. **We will only include 5 stories in the grading computation.**
+In order to get full credit on the assignment you need to do stories totaling **at least 12 story points**. Any story points you do beyond 12 will be applied as if they were assignment points (i.e., the conversion rate for any story point past 12 is 1 story point = 1 assignment point). You can submit additional stories totaling up to an additional 18 story points. In other words you can get up to 18 points of extra credit by doing a total of 30 story points. **We will only include 5 stories in the grading computation.**
 
 We plan to be stingy with the partial credit for partially implemented stories. A strategy that does fewer stories completely will fare better than a strategy that partially completes more stories.
 
@@ -48,9 +48,9 @@ To help us grade this assignment you need to provide guidance on the stories you
 
 Videos whose length is close to the maximum allowed will likely be too large for our submission process so we need you to provide us a link in the `submission.txt` file. Uploading the video to a video sharing website such as [YouTube](https://www.youtube.com/) or [Vimeo](https://vimeo.com/) is an easy way of getting such a link. As part of the grading process, we were planning on sharing on the class discussion forum some of our favorite videos. Please indicate in the `submission.txt` file if we have your permission to share your video.
 
-## Style Points (5 points)
+## Style
 
-These points will be awarded if your problem solutions have proper MVC decomposition, follow the MEAN stack conventions, and are **ESLint warning-free JavaScript. You will want to run `npm run lint` before submission.** In addition, your code and templates must be clean and readable, and your web pages must be at least "reasonably nice" in appearance and convenience.
+These requirements will be met if your problem solutions have proper MVC decomposition, follow the MEAN stack conventions, and are **ESLint warning-free JavaScript. You will want to run `npm run lint` before submission.** In addition, your code and templates must be clean and readable, and your web pages must be at least "reasonably nice" in appearance and convenience.
 
 Note: When installing dependencies that are not from npm (e.g., from bower), please modify the package.json file so that the script command `npm run lint` also excludes the folder(s) containing your dependencies. That way, the ESLint command will only check your own JS files and will skip over any JS files corresponding to libraries/dependencies that you use (which may not pass the linter).
 
